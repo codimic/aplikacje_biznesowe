@@ -1,10 +1,12 @@
 <?php
-$pws = isset($_POST["pws"]) ? trim($_POST["pws"]) : "";
-$srt = isset($_POST["srt"]) ? trim($_POST["srt"]) : "";
-$fName = isset($_POST["fName"]) ? trim($_POST["fName"]) : "";
+require_once __DIR__ . '/src/AccessValidator.php';
 
-$expectedPws = base64_decode("VGgxNV8xNV81VFIwbjY");
-$isValid = ($pws === $expectedPws && $srt === "1352" && $fName !== "");
+$validator = new AccessValidator();
+$isValid = $validator->isValid([
+  'pws' => $_POST['pws'] ?? '',
+  'srt' => $_POST['srt'] ?? '',
+  'fName' => $_POST['fName'] ?? '',
+]);
 ?>
 <!DOCTYPE html>
 <html lang="pl">

@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"AccessValidatorTest::testAcceptsCorrectCredentials":0,"AccessValidatorTest::testRejectsMissingName":0,"AccessValidatorTest::testRejectsWrongPassword":0}}

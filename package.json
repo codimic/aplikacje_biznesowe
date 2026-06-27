@@ -3,7 +3,9 @@
     "name": "startbootstrap-clean-blog",
     "version": "5.0.7",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch"
+        "start": "node_modules/.bin/gulp watch",
+        "test:php": "php phpunit-9.6.phar --configuration phpunit.xml",
+        "test:js": "jest --config jest.config.js --runInBand"
     },
     "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
     "keywords": [
@@ -44,6 +46,7 @@
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.2",
         "gulp-uglify": "3.0.2",
+        "jest": "^29.7.0",
         "merge-stream": "2.0.0"
     }
 }
