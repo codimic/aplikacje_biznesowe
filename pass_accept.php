@@ -54,7 +54,9 @@
                             var arr = [m];
                             arr.push("Element");
                             arr.push("Second Element");
-                            m.addEventListener("click", A2(arr));
+                            m.addEventListener("click", function() {
+                                A2(arr);
+                            });
                         }
                     }
                     
