@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Formularz dostępu</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="background-image: url('img/background.jfif'); background-size: cover; min-height: 100vh;">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <div class="p-4 shadow rounded" style="background-color: rgba(255,255,255,0.92);">
+          <h1 class="h3 mb-4">Weryfikacja dostępu</h1>
+          <form action="pass_accept.php" method="post">
+            <div class="mb-3">
+              <label for="pws" class="form-label">Hasło</label>
+              <input type="password" class="form-control" id="pws" name="pws" required>
+            </div>
+            <div class="mb-3">
+              <label for="srt" class="form-label">Kod</label>
+              <input type="text" class="form-control" id="srt" name="srt" required>
+            </div>
+            <div class="mb-3">
+              <label for="fName" class="form-label">Imię</label>
+              <input type="text" class="form-control" id="fName" name="fName" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
